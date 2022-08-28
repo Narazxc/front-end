@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nara's Todo App</title>
+</head>
+<body>
+
+    <!--Get user input-->
+    <input id="todo-title" type="text"/>
+
+
+    <button onclick="addTodo()">Add Todo</button>
+    <div id="info-div"></div>
+    <div id="todo-list"></div>
+    
+
+    <script>
+
+        // change HTML title through Javascript
+        document.title = "Hello Chainsaw Man";
+
+        const element = document.getElementById('info-div');
+        element.innerHTML = "(Written above where function is implemented inside of script ele)";
+
+
+        const todos = ['Get groceries', 'Wash car', 'Make dinner'];
+
+        render();
+
+        function addTodo(){
+            const textbox = document.getElementById('todo-title');
+            const title = textbox.value;
+            todos.push(title);
+
+            render();
+        }
+
+        function render() {
+            // reset our list
+            document.getElementById('todo-list').innerHTML = '';
+
+            // render the updated list
+            todos.forEach( 
+            function (todoTitle){
+                const element = document.createElement('div');
+                element.innerText = todoTitle;
+                const todoList = document.getElementById('todo-list');
+                todoList.appendChild(element);
+            }
+        );
+        }
+
+
+
+
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>

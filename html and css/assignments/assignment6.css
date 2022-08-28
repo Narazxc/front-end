@@ -1,0 +1,23 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container1 p{
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.a {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.a1 {
+    font-size: 22px;
+}
+
+.a1 span {
+    text-decoration: underline;
+}

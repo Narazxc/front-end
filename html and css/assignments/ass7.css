@@ -1,0 +1,137 @@
+body {
+    padding-bottom: 1000px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Arial';
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.img1 {
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.img3,
+.img2 {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.img3 {
+    border-radius: 120px;
+}
+
+.textfield {
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+.google-search-bar {
+    padding: 12px;
+    width: 450px;
+    border-radius: 200px;
+    border-style: none;
+}
+
+.google-search-bar:enabled {
+    outline: none;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.2);
+
+}
+
+.f {
+    color: rgb(107, 107, 107);
+    margin-bottom: 7px;
+}
+
+.f1 {
+    padding: 10px;
+    width: 375px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(91, 91, 91);
+    margin-bottom: 20px;
+}
+
+.f2 {
+    color: rgb(107, 107, 107);
+    margin-bottom: 20px;
+}
+
+.f3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 143px;
+    padding-left: 143px;
+    font-size: 20px;
+    background-color: rgb(42, 97, 174);
+    color: white;
+    border: none;
+    border-radius: 72px;
+    cursor: pointer;
+}
+
+.div-g {
+    background-color: white;
+    width: 400px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.g {
+    display: inline-block;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    vertical-align: middle;
+}
+
+.g1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(107, 107, 107);
+}
+
+.g2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 105px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border-style: none;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 20px;
+    background-color: rgb(59, 156, 230);
+    cursor: pointer;
+}
+
+.background-for-g {
+    display: flex;
+    background-color: black;
+    width: 500px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+

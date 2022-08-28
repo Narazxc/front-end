@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>excercise 7</title>
+    </head>
+    <body>
+
+        <script>
+            // arr of strings
+            let arrOfStrings = [];
+            arrOfStrings.push('Chainsaw Man');
+            arrOfStrings.push('Jujutsu Kaisen');
+            arrOfStrings.push('One Piece');
+
+            arrOfStrings.forEach(
+                // function
+                function toUpper (strings){
+                    console.log(strings.toUpperCase());
+                } 
+            );
+
+
+            // // function
+            // function toUpper (strings){
+            //     console.log(strings.toUpperCase());
+            // }
+
+
+            let arrayOfWords = [];
+            arrayOfWords.push('bark');
+            arrayOfWords.push('woof');
+            arrayOfWords.push('meow');
+
+            let resultArray = [];
+
+            arrayOfWords.forEach(
+                function arrayDouble (arrayOfWords) {
+                resultArray.push(arrayOfWords);
+                resultArray.push(arrayOfWords);
+                }
+            );
+
+            console.log(resultArray);
+
+            
+            let arrOfNum = [];
+            arrOfNum.push(5);
+            arrOfNum.push(6);
+            arrOfNum.push(9);
+
+            let total = 0;
+
+            arrOfNum.forEach( 
+                function arraySum (arrOfNum){
+                    total = total + arrOfNum;
+                    console.log(total);                    
+                }
+            );
+            console.log("result: " + total);
+
+
+
+        </script>
+    </body>
+</html>

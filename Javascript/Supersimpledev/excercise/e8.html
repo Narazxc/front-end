@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>excercise 8</title>
+    </head>
+    <body>
+        <button id="todo-button" onclick="whenClick()">not done</button>
+        <hr>
+        <div id="counter">0</div>
+        <button id="add1-button" onclick="addOne()">Up</button>
+        <hr>
+        <div id="counter2">0</div>
+        <button id="increase1-button" onclick="increaseOne()">Up</button>
+        <button id="decrease1-button" onclick="decreaseOne()">Down</button>
+        <hr>
+        <input id="letters" style="display: block;" type="text"/>
+        <button id="add-to-div" onclick="addToDiv()">Add to div</button>
+
+
+        <script>
+
+
+            function whenClick (){
+                let btn = document.getElementById('todo-button');
+                btn.innerHTML = 'Done';
+            }
+
+            let count = 0;
+            function addOne (){
+                count = count + 1;
+
+                let counterDiv = document.getElementById('counter');
+                counterDiv.innerHTML = count;
+            }
+
+
+            let count2 = 0;
+            let counterDiv2 = document.getElementById('counter2');
+
+            function increaseOne (){
+                count2 = count2 + 1;
+
+                counterDiv2.innerHTML = count2;
+            }
+            function decreaseOne (){
+                count2 = count2 - 1;
+
+                counterDiv2.innerHTML = count2;
+            }
+
+
+            function addToDiv () {
+                let message;
+
+                let element = document.getElementById('letters');
+                message = element.value;
+
+                element = document.createElement('div');
+                element.innerHTML = message;
+                document.body.appendChild(element);
+            }
+
+
+
+
+
+
+
+
+
+
+            
+        </script>
+    </body>
+</html>

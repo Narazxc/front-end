@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nara's Todo App</title>
+</head>
+<body>
+    <div>(Written in html body ele)</div>
+    <button>Press me</button>
+    <div>Get groceries</div>
+    <div>Wash car</div>
+    <div>Make dinner</div>
+    <hr>
+
+    <script>
+
+        let todo1 = '1. Play some game';
+        let todo2 = '2. Play dbd';
+        let todo3 = '3. write some websites';
+        let todo4 = '4. Do laundry';
+        let todo5 = '5. some';
+        let todo6 = '6. ELDEN RING';
+
+
+        // let age = 25;
+        // let message = 'I am ' + age + ' years old.';
+
+        let element;
+
+        element = document.createElement('div');
+        element.innerHTML = "(Written in script ele inside of HTML body ele)";
+        document.body.appendChild(element);
+        
+
+        element = document.createElement('button');
+        element.innerText = "Click me";
+        document.body.appendChild(element);
+
+        element = document.createElement('div');
+        element.innerText = todo1;
+        document.body.appendChild(element);
+
+        element = document.createElement('div');
+        element.innerText = todo3;
+        document.body.appendChild(element); 
+
+        element = document.createElement('div');
+        element.innerText = todo2;
+        document.body.appendChild(element);
+
+        // change HTML title through Javascript
+        document.title = "Hello Chainsaw Man";
+
+        // add <hr> using javascript
+        element = document.createElement('hr');
+        document.body.appendChild(element);
+
+        
+        element = document.createElement('div');
+        element.innerHTML = "(Written above where function is implemented inside of script ele)";
+        document.body.appendChild(element);
+
+        let todos = ['Get groceries', 'Wash car', 'Make dinner'];
+        todos.push('another todo');
+        todos.pop();
+
+        
+
+        function addTodo(todoTitle){
+
+            let element = document.createElement('div');
+            element.innerText = todoTitle;
+            document.body.appendChild(element);
+        }
+
+        addTodo(todo4);
+        addTodo(todo5);
+        addTodo(todo6);
+
+
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>excercise 9</title>
+
+        <style>
+            .add-to-cart-button {
+                display: inline-block;
+                margin-bottom: 5px;
+            }
+
+            .cart {
+                width: 100px;
+                display: inline-block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="cart" class="cart"></div>
+        <button id="apple-btn" onclick="addAppleToCart()" class="add-to-cart-button">Apple</button>
+        <button id="tomato-btn" onclick="addTomatoToCart()" class="add-to-cart-button">Tomato</button>
+        <button id="egg-btn" onclick="addEggToCart()" class="add-to-cart-button">Eggs</button>
+        <button id="clear" onclick="clearList()" class="">Clear</button>
+        <hr>
+        <input id="textfield" type="number" placeholder="Enter number"/>
+        <button id="cm-to-inch" onclick="toInch()" >Convert to inch</button>
+        <button id="inch-to-cm" onclick="toCm()" >Convert to cm</button>
+        <div id="result">Hello</div>
+
+        <script>
+            const cart = document.getElementById('cart');
+
+            function addAppleToCart (){
+                const element = document.createElement('div');
+                const appleBtn = document.getElementById('apple-btn');
+                element.innerHTML = appleBtn.innerHTML;
+                cart.appendChild(element);
+
+            }
+
+            function addTomatoToCart (){
+                const element = document.createElement('div');
+                const tomatoBtn = document.getElementById('tomato-btn');
+                element.innerHTML = tomatoBtn.innerHTML;
+                cart.appendChild(element);
+
+            }
+
+            function addEggToCart(){
+                const element = document.createElement('div');
+                const eggBtn = document.getElementById('egg-btn');
+                element.innerHTML = eggBtn.innerHTML;
+                cart.appendChild(element);
+
+            }
+
+            function clearList() {
+                cart.innerHTML = '';
+            }
+
+            
+
+            function toInch(){
+                let input;
+                const textField = document.getElementById('textfield');
+                const resultDiv = document.getElementById('result');
+
+                input = parseInt(textField.value);
+                let result = input / 2.54;
+
+                resultDiv.innerHTML = input + " cm = " + result + " inch"; 
+            }
+
+            function toCm (){
+                let input;
+                const textField = document.getElementById('textfield');
+                const resultDiv = document.getElementById('result');
+
+                input = parseInt(textField.value);
+                let result = input * 2.54;
+
+                resultDiv.innerHTML = input + " inch = " + result + " cm"; 
+            }
+
+        </script>
+    </body>
+</html>
